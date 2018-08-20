@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="#10ff"
+    tools:context=".AppConcessionaria">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTitulo"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#0bb"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="@string/txtMarca"
+        style="@style/estiloTexto"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spMarca"
+        android:entries="@array/arrayMarcas">
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="@string/txtModelo"
+        style="@style/estiloTexto"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtModelo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            style="@style/estiloTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="@string/txtTipo" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp">
+
+            <RadioButton
+                style="@style/estiloTexto"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:text="@string/txtPassageiro"
+                android:id="@+id/rbPassageiro"/>
+
+            <RadioButton
+                style="@style/estiloTexto"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="@string/txtCarga"
+                android:id="@+id/rbCarga"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtNovo"
+        android:background="#fff"
+        style="@style/estiloTexto"
+        android:id="@+id/cbNovo"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtSalvar"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        style="@style/estiloTexto"
+        android:id="@+id/btnSalvar"/>
+
+
+
+</LinearLayout>

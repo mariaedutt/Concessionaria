@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AppConcessionaria</string>
+
+    <string name="txtMarca">MARCA:</string>
+    <string name="txtTitulo">Concessionária da Maria</string>
+    <string name="txtModelo">MODELO:</string>
+    <string name="txtTipo">TIPO:</string>
+    <string name="txtPassageiro">Passageiro</string>
+    <string name="txtCarga">Carga</string>
+    <string name="txtNovo">Novo</string>
+    <string name="txtSalvar">SALVAR</string>
+
+    <string-array name="arrayMarcas">
+        <item>Selecione...</item>
+        <item>Fiat</item>
+        <item>Volvo</item>
+        <item>Chevrolet</item>
+    </string-array>
+
+
+</resources>
